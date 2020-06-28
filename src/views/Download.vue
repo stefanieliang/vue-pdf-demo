@@ -147,7 +147,6 @@ export default {
             }
           }
         }
-
         pdf.save("a4-multi.pdf");
       });
     }
