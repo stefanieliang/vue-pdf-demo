@@ -1,22 +1,37 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Html2canvas from '../views/Html2canvas.vue'
+import JsPdf from '../views/JsPdf.vue'
+import Download from '../views/Download.vue'
+import Columns from '../views/Columns.vue'
+import Columns2 from '../views/Columns2.vue'
 
 Vue.use(VueRouter)
 
-  const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
+const routes = [{
+    path: '/html2canvas',
+    name: 'Html2canvas',
+    component: Html2canvas
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/jsPdf',
+    name: 'JsPdf',
+    component: JsPdf
+  },
+  {
+    path: '/download',
+    name: 'Download',
+    component: Download
+  },
+  {
+    path: '/columns',
+    name: 'Columns',
+    component: Columns
+  },
+  {
+    path: '/columns2',
+    name: 'Columns2',
+    component: Columns2
   }
 ]
 
